@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change Calculator</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <form class="container">
+      <legend>Change Calculator</legend>
+      <div class="form-group col-md-5">
+        <label for="saleTotal" class="control-label">How much is due for the sale?</label>
+        <input id="saleTotal" type="number" class="form-control col-sm-10" placeholder="$">
+      </div>
+      <div class="form-group col-md-5">
+        <label for="received">How much has the customer given you?</label>
+        <input id="received" type="number" class="form-control col-sm-10" placeholder="$">
+      </div>
+      <div class="col-md-2 buttondiv">
+        <button id="calculate" class="btn btn-primary" type="button">Calculate</button>
+      </div>
+    </form>
+
+    <div class="container dollardiv">
+      <div class="col-md-12 dollarLabel">Dollars</div>
+      <div class="col-md-12 coins" id="dollars"></div>
+    </div>
+
+    <div class="container">
+      <div class="coindiv col-md-3">
+        <div class="col-md-12 coinLabel">Quarters</div>
+        <div id="quarters" class="coins"></div>
+      </div>
+      <div class="coindiv col-md-3">
+        <div class="col-md-12 coinLabel">Dimes</div>
+        <div id="dimes" class="coins"></div>
+      </div>
+      <div class="coindiv col-md-3">
+        <div class="col-md-12 coinLabel">Nickels</div>
+        <div id="nickels" class="coins"></div>
+      </div>
+      <div class="coindiv col-md-3">
+        <div class="col-md-12 coinLabel">Pennies</div>
+        <div id="pennies" class="coins"></div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+form {
+  margin-top: 2em;
+}
+
+legend {
+  font-size: 2em;
+}
+
+.container {
+  margin: 2rem auto;
+  border: 1px solid #ccf;
+  border-radius: 4px;
+  background-color: #f0f0ff;
+}
+
+button#calculate{
+  display: block;
+  margin: 1em auto;
+}
+
+.coindiv {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.dollardiv {
+  text-align: center;
+  font-size: 1.75em;
+}
