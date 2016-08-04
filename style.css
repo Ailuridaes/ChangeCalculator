@@ -2,10 +2,6 @@ form {
   margin-top: 2em;
 }
 
-legend {
-  font-size: 2em;
-}
-
 .container {
   margin: 2rem auto;
   border: 1px solid #ccf;
@@ -13,7 +9,16 @@ legend {
   background-color: #f0f0ff;
 }
 
-button#calculate{
+legend {
+  font-size: 2em;
+}
+
+.form-group input {
+  margin-bottom: 1em;
+}
+
+
+button#calculate {
   display: block;
   margin: 1em auto;
 }
@@ -26,4 +31,12 @@ button#calculate{
 .dollardiv {
   text-align: center;
   font-size: 1.75em;
+}
+
+@media (max-width: 992px) {
+  .coindiv {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #ccf;
+  }
 }
