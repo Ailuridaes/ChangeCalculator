@@ -2,7 +2,7 @@ form {
   margin-top: 2em;
 }
 
-.container {
+.changediv, .promptdiv {
   margin: 2rem auto;
   border: 1px solid #ccf;
   border-radius: 4px;
@@ -23,14 +23,18 @@ button#calculate {
   margin: 1em auto;
 }
 
-.coindiv {
+.changediv {
   text-align: center;
   font-size: 1.5em;
+  display: none;
 }
 
 .dollardiv {
-  text-align: center;
   font-size: 1.75em;
+}
+
+#error {
+  display: none;
 }
 
 @media (max-width: 992px) {

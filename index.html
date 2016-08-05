@@ -12,7 +12,7 @@
 
   <body>
 
-    <form class="container">
+    <form class="container promptdiv">
       <legend>Change Calculator</legend>
       <div class="form-group col-md-5">
         <label for="saleTotal" class="control-label">How much is due for the sale?</label>
@@ -22,18 +22,15 @@
         <label for="received">How much has the customer given you?</label>
         <input id="received" type="number" class="form-control col-sm-10" placeholder="$">
       </div>
-      <!-- removing to test
-      <div class="col-md-2 buttondiv">
-      -->
-        <button id="calculate" class="btn btn-primary" type="button">Calculate</button>
+      <button id="calculate" class="btn btn-primary" type="button">Calculate</button>
     </form>
 
-    <div class="container dollardiv">
+    <div class="container changediv dollardiv">
       <div class="col-md-12 dollarLabel">Dollars</div>
       <div class="col-md-12 coins" id="dollars"></div>
     </div>
 
-    <div class="container">
+    <div class="container changediv">
       <div class="coindiv col-md-3">
         <div class="col-md-12 coinLabel">Quarters</div>
         <div id="quarters" class="coins"></div>
@@ -50,6 +47,12 @@
         <div class="col-md-12 coinLabel">Pennies</div>
         <div id="pennies" class="coins"></div>
       </div>
+    </div>
+
+    <div class="alert alert-danger container" id="error" role="alert">
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>
+      Please check your numbers!
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
